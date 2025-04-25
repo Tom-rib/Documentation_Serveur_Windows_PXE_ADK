@@ -1,6 +1,6 @@
-# Documentation_Serveur_Windows_PXE_ADK
+# Documentation Installation et Configuration d'un Serveur PXE 
 
-# README - Installation et Configuration d'un Serveur PXE
+# README -
 
 Ce document explique étape par étape comment installer et configurer un serveur PXE (Preboot Execution Environment) en combinant Windows Server et des solutions open source. Ce serveur PXE permettra de déployer des machines en utilisant des images système (Windows/Debian), de faciliter l'automatisation des installations via des scripts, et de sécuriser l'environnement.
 
