@@ -9,7 +9,7 @@ Ce document explique étape par étape comment installer et configurer un serveu
 1. [Installer et configurer Windows Server](#1-installer-et-configurer-windows-server)  
 2. [Installer et configurer le service DNS et ADK](#2-installer-et-configurer-le-service-dns-et-adk)  
 3. [Installer et configurer le serveur TFTP (WDS)](#3-installer-et-configurer-le-serveur-tftp-wds)  
-4. [Création des Images Windows PE et Debian avec imagex.exe et envoi sur le serveur](#4-création-des-images-windows-pe-et-debian-avec-imagexexe-et-envoi-sur-le-serveur)  
+4. [Création des Images Windows PE avec imagex.exe et envoi sur le serveur](#4-création-des-images-windows-pe-et-debian-avec-imagexexe-et-envoi-sur-le-serveur)  
 5. [Boot Machine Virtuelle depuis le serveur PXE](#5-boot-machine-virtuelle-depuis-le-serveur-pxe)  
 6. [Automatisation de l’installation grâce à AD et à un script PowerShell](#6-automatisation-de-linstallation-grâce-à-ad-et-à-un-script-powershell)  
 7. [Sécurisation des Images et du serveur](#7-sécurisation-des-images-et-du-serveur)  
@@ -51,10 +51,10 @@ Windows Deployment Services (WDS) permet de déployer des OS sur un réseau via 
 
 ---
 
-## 4. Création des Images Windows PE et Debian avec imagex.exe et envoi sur le serveur
+## 4. Création des Images Windows PE avec imagex.exe et envoi sur le serveur
 
 **Description :**  
-Windows PE est une version légère de Windows utilisée pour installer ou réparer des systèmes. Debian est un OS open source qui peut également être déployé via PXE. L’outil **imagex.exe** vous aide à capturer une image système personnalisée.
+Windows PE est une version légère de Windows utilisée pour installer ou réparer des systèmes.  L’outil **imagex.exe** vous aide à capturer une image système personnalisée.
 
 **Actions :**  
 - Utiliser ADK pour créer une image Windows PE personnalisée.  
