@@ -1,0 +1,6 @@
+<FirstLogonCommands>
+    <SynchronousCommand wcm:action="add">
+        <CommandLine>powershell.exe -ExecutionPolicy Bypass -File D:\Windows\Setup\Scripts\Join-Domain.ps1</CommandLine>
+        <Order>1</Order>
+    </SynchronousCommand>
+</FirstLogonCommands>
