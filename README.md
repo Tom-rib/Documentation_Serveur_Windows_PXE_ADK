@@ -13,7 +13,7 @@ Ce document explique étape par étape comment installer et configurer un serveu
 5. [Boot Machine Virtuelle depuis le serveur PXE](#5-boot-machine-virtuelle-depuis-le-serveur-pxe)  
 6. [Automatisation de l’installation grâce à AD et à un script PowerShell](#6-automatisation-de-linstallation-grâce-à-ad-et-à-un-script-powershell)  
 7. [Sécurisation des Images et du serveur](#7-sécurisation-des-images-et-du-serveur)  
-8. [Création d’un Serveur PXE open source](#8-création-dun-serveur-pxe-open-source)  
+
 
 ---
 
@@ -96,19 +96,6 @@ Sécuriser le serveur PXE et ses images est primordial pour éviter les accès n
 - Activer HTTPS pour le transfert des fichiers sensibles entre client et serveur.  
 - Scanner les fichiers ISO ou images pour détecter des vulnérabilités éventuelles.  
 - Mettre en place des sauvegardes régulières du serveur et des images.  
-
----
-
-## 8. Création d’un Serveur PXE open source
-
-**Description :**  
-Pour une solution entièrement open source, vous pouvez remplacer Windows Server et ses outils par des alternatives telles que **dnsmasq**, **TFTPD**, et **Clonezilla** pour construire un serveur PXE fonctionnel.
-
-**Actions :**  
-- Installer une distribution Linux légère (ex : Debian ou Ubuntu).  
-- Configurer dnsmasq pour gérer le rôle DNS/DHCP et TFTP.  
-- Ajouter support pour des images personnalisées (comme Clonezilla pour le déploiement de sauvegardes).  
-- Tester le serveur pour le déploiement d’images et ajuster les paramètres.  
 
 ---
 
